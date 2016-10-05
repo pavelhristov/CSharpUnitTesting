@@ -13,10 +13,10 @@
       {
          var factory = new CosmeticsFactory();
          var name = string.Empty;
-         
+
          var ex = new ArgumentNullException();
 
-         var result = Assert.Throws<ArgumentNullException>(() => factory.CreateShampoo(name, "brend", 17.50m, Common.GenderType.Unisex, 200, Common.UsageType.EveryDay));
+         var result = Assert.Throws<ArgumentNullException>(() => factory.CreateShampoo(name, "brand", 17.50m, Common.GenderType.Unisex, 200, Common.UsageType.EveryDay));
          Assert.AreEqual(ex, result);
 
       }

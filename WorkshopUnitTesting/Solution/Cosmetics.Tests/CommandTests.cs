@@ -28,7 +28,7 @@
 
          var newCommand = Command.Parse(input);
 
-         Assert.AreEqual("CreateCategory", newCommand.Name, "Incorect name");
+         Assert.AreEqual("CreateCategory", newCommand.Name, "Incorrect name");
       }
 
       [TestMethod]
@@ -37,8 +37,8 @@
          var input = "CreateCategory ForMale";
 
          var newCommand = Command.Parse(input);
-         
-         Assert.AreEqual("ForMale", newCommand.Parameters[0], "Incorect parameters");
+
+         Assert.AreEqual("ForMale", newCommand.Parameters[0], "Incorrect parameters");
       }
 
       [TestMethod]
